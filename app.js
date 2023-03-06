@@ -62,7 +62,7 @@ app.use(
     cookie: {
       secure: true, //tắt đi test local,bật lên cho deployment
       maxAge: 1000 * 60 * 60,
-      sameSite: true, //tắt đi test local,bật lên cho deployment
+      sameSite: 'none', //tắt đi test local,bật lên cho deployment
     },
   })
 );
